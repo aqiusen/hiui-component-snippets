@@ -32,6 +32,41 @@
     "body": [
       "<Table columns={${1|[],columns|}} data={[]} bordered={true} fieldKey=\"$TM_FILENAME_BASE\" />"
     ],
-    "description": "Code snippet for \"HiButton Loading\""
+    "description": "Code snippet for \"Hi Table\""
+  },
+  "HiTableColumns": {
+    "prefix": "htd",
+    "body": [
+      "const ${1:columns}: TableColumnItem[] = [{title: '${2:序号}',dataKey: '${3:index}',width: ${4:60}}]"
+    ],
+    "description": "Code snippet for \"HiTableColumns\""
+  },
+  "HiTableColumnsRender": {
+    "prefix": "htdr",
+    "body": [
+        "const ${1:columns}: TableColumnItem[] = [{title: '${2:序号}',dataKey: '${3:index}',width: ${4:60},render: (_text, _rec, index) => index + 1}]"
+    ],
+    "description": "Code snippet for \"HiTableColumns\""
+  },
+  "HiSelect": {
+    "prefix": "hsel",
+    "body": [
+      "<Select style={{ width: 240 }} clearable={false} data={${1:data}} value={${2:value}} onChange={(selectedId) => {\n\tconsole.log(selectedId)\n}}/>"
+    ],
+    "description": "Code snippet for \"Hi Select\""
+  },
+  "HiInput": {
+    "prefix": "hi",
+    "body": [
+      "<Input placeholder=\"${1:请输入}\"></Input>"
+    ],
+    "description": "Code snippet for \"Hi Select\""
+  },
+  "HiInputAutoFocus": {
+    "prefix": "hia",
+    "body": [
+      "<Input autoFocus placeholder=\"${1:请输入}\"></Input>"
+    ],
+    "description": "Code snippet for \"Hi Select\""
   }
 }
