@@ -60,13 +60,111 @@
     "body": [
       "<Input placeholder=\"${1:请输入}\"></Input>"
     ],
-    "description": "Code snippet for \"Hi Select\""
+    "description": "Code snippet for \"HiInput\""
   },
   "HiInputAutoFocus": {
     "prefix": "hia",
     "body": [
       "<Input autoFocus placeholder=\"${1:请输入}\"></Input>"
     ],
-    "description": "Code snippet for \"Hi Select\""
-  }
+    "description": "Code snippet for \"HiInputAutoFocus\""
+  },
+  "HiCard": {
+    "prefix": "hc",
+    "body": [
+      "<Card bordered={false}></Card>"
+    ],
+    "description": "Code snippet for \"HiCard\""
+  },
+  "HiProgress": {
+    "prefix": "hp",
+    "body": [
+      "<Progress strokeWidth={20} percent={0}  placement=\"${1|inside,outside|}\"></Progress>"
+    ],
+    "description": "Code snippet for \"HiCard\""
+  },
+  "HiProgressWithType": {
+    "prefix": "hpt",
+    "body": [
+      "<Progress strokeWidth={20} percent={0}  type=\"${1|primary,warning,error,success|}\" placement=\"${2|inside,outside|}\"></Progress>"
+    ],
+    "description": "Code snippet for \"HiProgressWithType\""
+  },
+  "HiMessage":{
+    "prefix": "hm",
+    "body": [
+      "message.open({ title: \"${2}\", type: \"${1|success,info,error,warning|}\"})"   
+    ],
+    "description": "Code snippet for \"HiMessage\""
+  },
+  "HiMessageImport":{
+    "prefix": "hmimport",
+    "body": [
+      "import message from '@hi-ui/message'\n"   
+    ],
+    "description": "Code snippet for \"HiMessageImport\""
+  },
+  "HiLoadingCode":{
+    "prefix": "hloadingcode",
+    "body": [
+      "import Loading from '@hi-ui/loading'\nconst loadingIdRef = React.useRef<any>(null)\nReact.useEffect(() => {\n\treturn () => {\n\tLoading.close(loadingIdRef.current)\n\t}\n}, [])"   
+    ],
+    "description": "Code snippet for \"HiLoading\""
+  },
+  "HiLoadingComp":{
+    "prefix": "hloadingcomp",
+    "body": [
+      " <Loading content=\"${1:Loading...}\" delay={${2:500}}></Loading>"   
+    ],
+    "description": "Code snippet for \"HiLoadingComp\""
+  },
+  "HiTag": {
+    "prefix": "htag",
+    "body": [
+      "<Tag strokeWidth={20} percent={0}  type=\"${1|primary,success,danger,warning,default|}\"></Tag>"
+    ],
+    "description": "Code snippet for \"HiTag\""
+  },
+  "HiHightLight": {
+    "prefix": "hlight",
+    "body": [
+      "<Highlighter keyword=\"${1:高亮关键字}\">${2}</Highlighter>"
+    ],
+    "description": "Code snippet for \"HiHightLight\""
+  },
+  "HiHightLightImport": {
+    "prefix": "hlightImport",
+    "body": [
+      "import Highlighter from \"@hi-ui/highlighter\"\n"
+    ],
+    "description": "Code snippet for \"HiHightLightImport\""
+  },
+  "HiResult": {
+    "prefix": "hres",
+    "body": [
+      "<Result title=\"${1:我是标题}\" content=\"${2:我是结果信息的说明文案}\"></Result>"
+    ],
+    "description": "Code snippet for \"HiResult\""
+  },
+  "HiResultImport": {
+    "prefix": "hresimport",
+    "body": [
+      "import Result from \"@hi-ui/result\"\n"
+    ],
+    "description": "Code snippet for \"HiHightLightImport\""
+  },
+  "HiNotification":{
+    "prefix": "hnotification",
+    "body": [
+      "notification.open({ title: \"${2:title}\", content: \"${1:content}\", })"   
+    ],
+    "description": "Code snippet for \"HiNotification\""
+  },
+  "HiNotificationImport":{
+    "prefix": "hnotifyimport",
+    "body": [
+      "import Button from \"@hi-ui/button\"\n"   
+    ],
+    "description": "Code snippet for \"HiNotificationImport\""
+  },
 }
