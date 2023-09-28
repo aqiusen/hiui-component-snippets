@@ -1,0 +1,37 @@
+{
+  "HiButton": {
+    "prefix": "hb",
+    "body": [
+      "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" onClick={() => {\n\t// click Event\n}}>\n\t${2:按钮名称}\n</Button>"
+    ],
+    "description": "Code snippet for \"HiButton\""
+  },
+  "HiButtonLink": {
+    "prefix": "hba",
+    "body": [
+      "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" appearance=\"link\" onClick={() => {\n\t// click Event}}>\n\t${2:按钮名称}\n</Button>"
+    ],
+    "description": "Code snippet for \"HiButton link\""
+  },
+  "HiButtonLinkIcon": {
+    "prefix": "hbi",
+    "body": [
+      "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" appearance=\"link\" icon={<PlusOutlined />} onClick={() => {\n\t// click Event}}>\n\t${2:按钮名称}\n</Button>"
+    ],
+    "description": "Code snippet for \"HiButton icon\""
+  },
+  "HiButtonLinkLoading": {
+    "prefix": "hbl",
+    "body": [
+      "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\"  icon={<PlusOutlined />}  loading onClick={() => {\n\t// click Event}}>\n\t${2:按钮名称}\n</Button>"
+    ],
+    "description": "Code snippet for \"HiButton Loading\""
+  },
+  "HiTable": {
+    "prefix": "ht",
+    "body": [
+      "<Table columns={${1|[],columns|}} data={[]} bordered={true} fieldKey=\"$TM_FILENAME_BASE\" />"
+    ],
+    "description": "Code snippet for \"HiButton Loading\""
+  }
+}

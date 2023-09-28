@@ -12,10 +12,22 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "hiui-component-snippets.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+      {
+        "command": "hiui-component-snippets.helloWorld",
+        "title": "hiui-component-snippets.helloWorld"
+      }
+    ],
+    "snippets": [
+      {
+        "when": "editorFocus && (resourceExtname == .js || resourceExtname == .ts || resourceExtname == .tsx || resourceExtname == .jsx)",
+        "path": ".code-snippets"
+      },
+      {
+        "when": "editorFocus && (resourceExtname == .js || resourceExtname == .ts || resourceExtname == .tsx || resourceExtname == .jsx)",
+        "path": ".code-snippets"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
