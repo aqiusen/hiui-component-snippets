@@ -1,27 +1,27 @@
 {
   "HiButton": {
-    "prefix": "mibutton",
+    "prefix": "hb",
     "body": [
       "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" onClick={() => {\n\t// click Event\n}}>\n\t${2:按钮名称}\n</Button>"
     ],
     "description": "Code snippet for \"HiButton\""
   },
   "HiButtonLink": {
-    "prefix": "mibuttonlink",
+    "prefix": "hba",
     "body": [
       "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" appearance=\"link\" onClick={() => {\n\t// click Event}}>\n\t${2:按钮名称}\n</Button>"
     ],
     "description": "Code snippet for \"HiButton link\""
   },
   "HiButtonLinkIcon": {
-    "prefix": "mibuttonicon",
+    "prefix": "hbi",
     "body": [
       "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" appearance=\"link\" icon={<PlusOutlined />} onClick={() => {\n\t// click Event}}>\n\t${2:按钮名称}\n</Button>"
     ],
     "description": "Code snippet for \"HiButton icon\""
   },
   "HiButtonLinkLoading": {
-    "prefix": "mibuttonloading",
+    "prefix": "hbl",
     "body": [
       "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\"  icon={<PlusOutlined />}  loading onClick={() => {\n\t// click Event}}>\n\t${2:按钮名称}\n</Button>"
     ],
@@ -166,19 +166,5 @@
       "import Button from \"@hi-ui/button\"\n"   
     ],
     "description": "Code snippet for \"HiNotificationImport\""
-  },
-  "HiPop":{
-    "prefix": "hpop",
-    "body": [
-      "<PopConfirm title=\"${1:content}\">${2}</PopConfirm>"   
-    ],
-    "description": "Code snippet for \"HiPop\""
-  },
-  "HiPopImport":{
-    "prefix": "hpopimport",
-    "body": [
-      "import PopConfirm from \"@hi-ui/pop-confirm\"\n"   
-    ],
-    "description": "Code snippet for \"HiPopImport\""
   },
 }
