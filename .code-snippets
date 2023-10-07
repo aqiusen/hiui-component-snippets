@@ -433,6 +433,16 @@
     "body": ["import Carousel from \"@hi-ui/carousel\""],
     "description": "Code snippet for \"HiCarouselImport\""
   },
+  "HiAvater": {
+    "prefix": "havater",
+    "body": ["<Avatar bordered></Avatar>"],
+    "description": "Code snippet for \"HiAvater\""
+  },
+  "HiAvaterImport": {
+    "prefix": "havater-import",
+    "body": ["import Card from \"@hi-ui/card\""],
+    "description": "Code snippet for \"HiAvaterImport\""
+  },
   "HiCard": {
     "prefix": "hcard",
     "body": ["<Card bordered={false}></Card>"],
@@ -442,6 +452,79 @@
     "prefix": "hcard-import",
     "body": ["import Card from \"@hi-ui/card\""],
     "description": "Code snippet for \"HiCardImport\""
+  },
+  "HiCollapse": {
+    "prefix": "hcollapse",
+    "body": [
+      "<Collapse defaultActiveId={[\"\"]} arrowPlacement=\"${1|left,right|}\">",
+      "\t<Collapse.Panel title=\"${2}\" id=\"1\">",
+      "\t\t${3}",
+      "\t</Collapse.Panel>",
+      "</Collapse>"
+    ],
+    "description": "Code snippet for \"HiCollapse\""
+  },
+  "HiCollapseImport": {
+    "prefix": "hcollapse-import",
+    "body": ["import Collapse from \"@hi-ui/collapse\""],
+    "description": "Code snippet for \"HiCollapseImport\""
+  },
+  "HiDescriptions": {
+    "prefix": "hdesc",
+    "body": [
+      "<Descriptions>",
+      "\t<Descriptions.Item label=\"${1}\">",
+      "\t\t${2}",
+      "\t</Descriptions.Item>",
+      "</Descriptions>"
+    ],
+    "description": "Code snippet for \"HiDescriptions\""
+  },
+  "HiDescriptionsImport": {
+    "prefix": "hdesc-import",
+    "body": ["import Descriptions from \"@hi-ui/descriptions\""],
+    "description": "Code snippet for \"HiDescriptionsImport\""
+  },
+  "HiList": {
+    "prefix": "hlist",
+    "body": [
+      "<List data={${1:[]}} render={(dataItem) => {"
+      "\treturn <List.Item {...dataItem} />",
+      "}}",
+      "/>"
+    ],
+    "description": "Code snippet for \"HiList\""
+  },
+  "HiListImport": {
+    "prefix": "hlist-import",
+    "body": ["import List from \"@hi-ui/list\""],
+    "description": "Code snippet for \"HiListImport\""
+  },
+  "HiPopover": {
+    "prefix": "hpopover",
+    "body": [
+      "<Popover title={${1:\"\"}} content={${2:\"\"}} trigger=\"${3|click,contextmenu,hover,focus|}\">",
+      "\t<div>input content </div>"
+      "</Popover>"
+    ],
+    "description": "Code snippet for \"HiPopover\""
+  },
+  "HiPopoverImport": {
+    "prefix": "hpopover-import",
+    "body": ["import Popover from \"@hi-ui/popover\""],
+    "description": "Code snippet for \"HiPopoverImport\""
+  },
+  "HiPreview": {
+    "prefix": "hpreview",
+    "body": [
+      "<Preview title={${1:\"\"}} src={${2:\"\"}} visible={false} onClose={() => {console.log('set ShowIndex at here')}}/>",
+    ],
+    "description": "Code snippet for \"HiPreview\""
+  },
+  "HiPreviewImport": {
+    "prefix": "hpreview-import",
+    "body": ["import Preview from \"@hi-ui/preview\""],
+    "description": "Code snippet for \"HiPreviewImport\""
   },
   "HiTable": {
     "prefix": "htable",
@@ -469,27 +552,112 @@
     ],
     "description": "Code snippet for \"HiTableColumns\""
   },
-
-  "HiProgress": {
-    "prefix": "hprogress",
+  "HiTimeline": {
+    "prefix": "htimeline",
     "body": [
-      "<Progress strokeWidth={20} percent={0}  placement=\"${1|inside,outside|}\"></Progress>"
+      "<Timeline style={{ width: 440 }} data={${1:[]}}/>",
     ],
-    "description": "Code snippet for \"HiCard\""
+    "description": "Code snippet for \"HiTimeline\""
   },
-  "HiProgressImport": {
-    "prefix": "hprogress-import",
-    "body": ["import Progress from \"@hi-ui/progress\""],
-    "description": "Code snippet for \"HiProgressImport\""
+  "HiTimelineImport": {
+    "prefix": "htimeline-import",
+    "body": ["import Timeline from \"@hi-ui/timeline\""],
+    "description": "Code snippet for \"HiTimelineImport\""
   },
-  "HiProgressWithType": {
-    "prefix": "hprogress-type",
+  "HiToolTip": {
+    "prefix": "htooltip",
     "body": [
-      "<Progress strokeWidth={20} percent={0}  type=\"${1|primary,warning,error,success|}\" placement=\"${2|inside,outside|}\"></Progress>"
+      "<Tooltip title=\"${1}\" trigger=\"${2|hover,click,focus,contextmenu|}\">",
+      "\t${3:<div>trigger</div>}"
+      "</Tooltip>"
     ],
-    "description": "Code snippet for \"HiProgressWithType\""
+    "description": "Code snippet for \"HiTimeline\""
+  },
+  "HiToolTipImport": {
+    "prefix": "htooltip-import",
+    "body": ["import Tooltip from \"@hi-ui/tooltip\""],
+    "description": "Code snippet for \"HiToolTipImport\""
+  },
+  "HiTree": {
+    "prefix": "htree",
+    "body": [
+      "<Tree data={${1:[]}} expandedIds={${2:[]}} onExpand={${3:[]}}>",
+      "</Tree>"
+    ],
+    "description": "Code snippet for \"HiTree\""
+  },
+  "HiTreeImport": {
+    "prefix": "htree-import",
+    "body": ["import Tree from \"@hi-ui/tree\""],
+    "description": "Code snippet for \"HiTreeImport\""
+  },
+  "HiEllipsisTooltip": {
+    "prefix": "hellipsis-tooltip",
+    "body": [
+      "<EllipsisTooltip>",
+      "\t${1}"
+      "</EllipsisTooltip>"
+    ],
+    "description": "Code snippet for \"HiEllipsisTooltip\""
+  },
+  "HiEllipsisTooltipImport": {
+    "prefix": "hellipsis-tooltip-import",
+    "body": ["import EllipsisTooltip from \"@hi-ui/ellipsis-tooltip\""],
+    "description": "Code snippet for \"HiEllipsisTooltipImport\""
   },
   //状态/反馈
+  "HiAlert": {
+    "prefix": "halert",
+    "body": [
+      "<Alert type=\"${1|success,warning,danger,primary|}\" title=\"${2:信息提示的文案}\" onClose={()=>{\n\tconsole.log(\"alert关闭回调\")\n}} />",
+    ],
+    "description": "Code snippet for \"HiAlert\""
+  },
+  "HiAlertImport": {
+    "prefix": "halert-import",
+    "body": ["import Alert from \"@hi-ui/alert\""],
+    "description": "Code snippet for \"HiAlertImport\""
+  },
+  "HiEmptyState": {
+    "prefix": "hempty-state",
+    "body": [
+      "<EmptyState/>",
+    ],
+    "description": "Code snippet for \"HiEmptyState\""
+  },
+  "HiEmptyStateImport": {
+    "prefix": "hempty-state-import",
+    "body": ["import EmptyState from \"@hi-ui/empty-state\""],
+    "description": "Code snippet for \"HiEmptyStateImport\""
+  },
+  "HiDrawer": {
+    "prefix": "hdraw",
+    "body": [
+      "<Draw title=\"${1:抽屉标题}\" visible={false}  onClose={() => console.log('onClose')} footer={<div>footer</div>}>",
+      "\t${2}<div>input content</div>"
+      "</Draw>"
+    ],
+    "description": "Code snippet for \"HiDrawer\""
+  },
+  "HiDrawerImport": {
+    "prefix": "hdraw-import",
+    "body": ["import Drawer from \"@hi-ui/drawer\""],
+    "description": "Code snippet for \"HiDrawerImport\""
+  },
+  "HiBadge": {
+    "prefix": "hbadge",
+    "body": [
+      "<Badge type=\"${1|dot,bubble|}\">",
+      "\t${2}<div>input content</div>"
+      "</Badge>"
+    ],
+    "description": "Code snippet for \"HiBadge\""
+  },
+  "HiBadgeImport": {
+    "prefix": "hbadge-import",
+    "body": ["import Badge from \"@hi-ui/badge\""],
+    "description": "Code snippet for \"HiBadgeImport\""
+  },
   "HiLoading": {
     "prefix": "hloading",
     "body": [
@@ -516,6 +684,34 @@
     "body": ["import message from '@hi-ui/message'\n"],
     "description": "Code snippet for \"HiMessageImport\""
   },
+  "HiModal": {
+    "prefix": "hmodal",
+    "body": [
+      "<Modal title=\"${1:提示}\" visible={false} closeable={false} onCancel={() => console.log('setVisible(false)')}>",
+      "\t${2}<div>input content</div>"
+      "</Modal>"
+    ],
+    "description": "Code snippet for \"HiModal\""
+  },
+  "HiModalImport": {
+    "prefix": "hmodal-import",
+    "body": ["import Modal from '@hi-ui/modal'\n"],
+    "description": "Code snippet for \"HiModalImport\""
+  },
+  "HiPopConfirm": {
+    "prefix": "hpop-confirm",
+    "body": [
+      "<PopConfirm title=\"${1:提示}\">",
+      "\t${2}<div>input content</div>"
+      "</PopConfirm>"
+    ],
+    "description": "Code snippet for \"HiPopConfirm\""
+  },
+  "HiPopConfirmImport": {
+    "prefix": "hpop-confirm-import",
+    "body": ["import PopConfirm from '@hi-ui/pop-confirm'\n"],
+    "description": "Code snippet for \"HiPopConfirmImport\""
+  },
   "HiNotification": {
     "prefix": "hnotification",
     "body": [
@@ -527,6 +723,25 @@
     "prefix": "hnotify-import",
     "body": ["import Notification from \"@hi-ui/notification\"\n"],
     "description": "Code snippet for \"HiNotificationImport\""
+  },
+  "HiProgress": {
+    "prefix": "hprogress",
+    "body": [
+      "<Progress strokeWidth={20} percent={0}  placement=\"${1|inside,outside|}\"></Progress>"
+    ],
+    "description": "Code snippet for \"HiCard\""
+  },
+  "HiProgressImport": {
+    "prefix": "hprogress-import",
+    "body": ["import Progress from \"@hi-ui/progress\""],
+    "description": "Code snippet for \"HiProgressImport\""
+  },
+  "HiProgressWithType": {
+    "prefix": "hprogress-type",
+    "body": [
+      "<Progress strokeWidth={20} percent={0}  type=\"${1|primary,warning,error,success|}\" placement=\"${2|inside,outside|}\"></Progress>"
+    ],
+    "description": "Code snippet for \"HiProgressWithType\""
   },
   "HiResult": {
     "prefix": "hres",
