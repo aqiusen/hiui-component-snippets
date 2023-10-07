@@ -516,7 +516,7 @@
   "HiPreview": {
     "prefix": "hpreview",
     "body": [
-      "<Preview title={${1:\"\"}} src={${2:\"\"}} visible={false} onClose={() => {console.log('set ShowIndex at here')}}/>",
+      "<Preview title={${1:\"\"}} src={${2:\"\"}} visible={false} onClose={() => {console.log('set ShowIndex at here')}}/>"
     ],
     "description": "Code snippet for \"HiPreview\""
   },
@@ -554,7 +554,7 @@
   "HiTimeline": {
     "prefix": "htimeline",
     "body": [
-      "<Timeline style={{ width: 440 }} data={${1:[]}}/>",
+      "<Timeline style={{ width: 440 }} data={${1:[]}}/>"
     ],
     "description": "Code snippet for \"HiTimeline\""
   },
@@ -608,7 +608,7 @@
   "HiAlert": {
     "prefix": "halert",
     "body": [
-      "<Alert type=\"${1|success,warning,danger,primary|}\" title=\"${2:信息提示的文案}\" onClose={()=>{\n\tconsole.log(\"alert关闭回调\")\n}} />",
+      "<Alert type=\"${1|success,warning,danger,primary|}\" title=\"${2:信息提示的文案}\" onClose={()=>{\n\tconsole.log(\"alert关闭回调\")\n}} />"
     ],
     "description": "Code snippet for \"HiAlert\""
   },
@@ -620,7 +620,7 @@
   "HiEmptyState": {
     "prefix": "hempty-state",
     "body": [
-      "<EmptyState/>",
+      "<EmptyState/>"
     ],
     "description": "Code snippet for \"HiEmptyState\""
   },
@@ -866,5 +866,5 @@
     "prefix": "hback-top-import",
     "body": ["import BackTop from '@hi-ui/back-top'\n"],
     "description": "Code snippet for \"HiBackTopImport\""
-  },
+  }
 }
