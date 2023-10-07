@@ -50,5 +50,14 @@
     "mocha": "^10.2.0",
     "typescript": "^5.1.6",
     "@vscode/test-electron": "^2.3.4"
-  }
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/aqiusen/hiui-component-snippets/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aqiusen/hiui-component-snippets"
+  },
+  "homepage": "https://github.com/aqiusen/hiui-component-snippets#readme"
 }
