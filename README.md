@@ -109,8 +109,8 @@
 
 # 代码提示使用方式：
 
-![code-tip](/code-tip.gif)
+![code-tip](/images/code-tip.gif)
 
 # 导入包提示：
 
-![header-tip-gif图](/header-tip.gif)
+![header-tip-gif图](/images/header-tip.gif)
