@@ -15,21 +15,21 @@
   "HiButtonLink": {
     "prefix": "hbtna",
     "body": [
-      "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" appearance=\"link\" onClick={() => {\n\t// click Event}}>\n\t${2:按钮名称}\n</Button>"
+      "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" appearance=\"link\" onClick={() => {\n\t// click Event\n}}>\n\t${2:按钮名称}\n</Button>"
     ],
     "description": "Code snippet for \"HiButtonLink\""
   },
   "HiButtonLinkIcon": {
     "prefix": "hbtni",
     "body": [
-      "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" appearance=\"link\" icon={<PlusOutlined />} onClick={() => {\n\t// click Event}}>\n\t${2:按钮名称}\n</Button>"
+      "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" appearance=\"link\" icon={<PlusOutlined />} onClick={() => {\n\t// click Event\n}}>\n\t${2:按钮名称}\n</Button>"
     ],
     "description": "Code snippet for \"HiButton icon\""
   },
   "HiButtonLinkLoading": {
     "prefix": "hbtnl",
     "body": [
-      "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\"  icon={<PlusOutlined />}  loading onClick={() => {\n\t// click Event}}>\n\t${2:按钮名称}\n</Button>"
+      "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\"  icon={<PlusOutlined />}  loading onClick={() => {\n\t// click Event\n}}>\n\t${2:按钮名称}\n</Button>"
     ],
     "description": "Code snippet for \"HiButton Loading\""
   },
@@ -47,7 +47,7 @@
   },
   "HiGridImport": {
     "prefix": "hgrid-import",
-    "body": ["import Space from '@hi-ui/space'\nconst { Row, Col } = Grid\n"],
+    "body": ["import Grid from '@hi-ui/grid'\nconst { Row, Col } = Grid\n"],
     "description": "Code snippet for \"HiGridImport\""
   },
   "HiSpace": {
@@ -100,7 +100,7 @@
   "HiPage": {
     "prefix": "hpage",
     "body": [
-      "<Pagination total={${1:100}} pageSize={${2:10}}  current={${3|{}|}} onChange={(cur, prev, pageSize) => {\n\tconsole.log(\"onChange\", cur, prev, pageSize)\n}}/>"
+      "<Pagination total={${1:100}} pageSize={${2:10}}  current={1} onChange={(cur, prev, pageSize) => {\n\tconsole.log(\"onChange\", cur, prev, pageSize)\n}}/>"
     ],
     "description": "Code snippet for \"HiPage\""
   },
@@ -112,7 +112,7 @@
 
   "HiStep": {
     "prefix": "hstep",
-    "body": ["<Stepper data={${1|{}|}} current={${2:2}} />"],
+    "body": ["<Stepper data={${1:[]}} current={${2:2}} />"],
     "description": "Code snippet for \"HiStepper\""
   },
   "HiStepImport": {
@@ -134,48 +134,48 @@
   },
   //数据录入
   "HiCheckSelect": {
-    "prefix": "hcs",
+    "prefix": "hcheck-select",
     "body": [
       "<CheckSelect style={{ width: 240 }} placeholder=\"${1:请选择}\" searchable clearable data={${2:[]}} />"
     ],
     "description": "Code snippet for \"HiCheckSelect\""
   },
   "HiCheckSelectImport": {
-    "prefix": "hcs-import",
+    "prefix": "hcheck-select-import",
     "body": ["import CheckSelect from '@hi-ui/check-select'"],
     "description": "Code snippet for \"HiCheckSelectImport\""
   },
   "HiCheckCas": {
-    "prefix": "hccas",
+    "prefix": "hcheck-cas",
     "body": [
       "<CheckCascader style={{ width: 240 }} defaultValue={[[\"xx\", \"xx\", \"xx\"]]} placeholder=\"${1:请选择}\" searchable={false} changeOnSelect data={${2:[]}} onChange={console.log} />"
     ],
     "description": "Code snippet for \"HiCheckCas\""
   },
   "HiCheckCasImport": {
-    "prefix": "hccas-import",
+    "prefix": "hcheck-cas-import",
     "body": ["import CheckCascader from '@hi-ui/check-cascader'"],
     "description": "Code snippet for \"HiCheckCasImport\""
   },
   "HiCheck": {
-    "prefix": "hcb",
+    "prefix": "hcheck",
     "body": ["<Checkbox>\n\t${1}\n</Checkbox>"],
     "description": "Code snippet for \"HiCheck\""
   },
   "HiCheckImport": {
-    "prefix": "hcb-import",
+    "prefix": "hcheck-import",
     "body": ["import Checkbox from '@hi-ui/checkbox'"],
     "description": "Code snippet for \"HiCheckImport\""
   },
   "HiCheckTreeSelect": {
-    "prefix": "hctree-select",
+    "prefix": "hcheck-tree-select",
     "body": [
       "<CheckTreeSelect style={{ width: 240 }} checkedMode=\"${1|PARENT,ALL,CHILD,SEPARATE|}\" data={${2:[]}} onChange={console.log}/>"
     ],
     "description": "Code snippet for \"HiCheckTreeSelect\""
   },
   "HiCheckTreeSelectImport": {
-    "prefix": "hctree-select-import",
+    "prefix": "hcheck-tree-select-import",
     "body": ["import CheckTreeSelect from '@hi-ui/check-tree-select'"],
     "description": "Code snippet for \"HiCheckTreeSelectImport\""
   },
@@ -212,7 +212,7 @@
   },
   "HiFormImport": {
     "prefix": "hform-import",
-    "body": ["import Form from '@hi-ui/form'"],
+    "body": ["import Form from '@hi-ui/form'","const FormItem = Form.Item"],
     "description": "Code snippet for \"HiFormImport\""
   },
   "HiCascader": {
@@ -223,7 +223,7 @@
     "description": "Code snippet for \"HiCascader\""
   },
   "HiCascaderImport": {
-    "prefix": "hform-import",
+    "prefix": "hcascader-import",
     "body": ["import Cascader from '@hi-ui/cascader'"],
     "description": "Code snippet for \"HiCascaderImport\""
   },
@@ -317,7 +317,7 @@
   "HiSelect": {
     "prefix": "hselect",
     "body": [
-      "<Select style={{ width: 240 }} clearable={false} data={${1:data}} value={${2:value}} onChange={(selectedId) => {\n\tconsole.log(selectedId)\n}}/>"
+      "<Select style={{ width: 240 }} clearable={false} data={${1:[]}} value={${2:\"\"}} onChange={(selectedId) => {\n\tconsole.log(selectedId)\n}}/>"
     ],
     "description": "Code snippet for \"HiSelect\""
   },
@@ -743,14 +743,14 @@
     "description": "Code snippet for \"HiProgressWithType\""
   },
   "HiResult": {
-    "prefix": "hres",
+    "prefix": "hresult",
     "body": [
       "<Result title=\"${1:我是标题}\" content=\"${2:我是结果信息的说明文案}\"></Result>"
     ],
     "description": "Code snippet for \"HiResult\""
   },
   "HiResultImport": {
-    "prefix": "hres-import",
+    "prefix": "hresult-import",
     "body": ["import Result from '@hi-ui/result'\n"],
     "description": "Code snippet for \"HiHightLightImport\""
   },
