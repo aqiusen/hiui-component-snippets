@@ -2,12 +2,19 @@
   "name": "hiui-component-snippets",
   "displayName": "hiui-component-snippets",
   "description": "quick use hiui component",
+  "publisher": "dasenge",
+  "keywords": [
+    "react",
+    "hiui",
+    "snipppets"
+  ],
+  "icon": "logo.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.82.0"
   },
   "categories": [
-    "Other"
+    "Snippets"
   ],
   "activationEvents": [],
   "main": "./extension.js",

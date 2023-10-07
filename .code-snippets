@@ -8,7 +8,7 @@
     "description": "Code snippet for \"HiButton\""
   },
   "HiButtonImport": {
-    "prefix": "hcounter-import",
+    "prefix": "hbtn-import",
     "body": ["import Button from '@hi-ui/button'"],
     "description": "Code snippet for \"HiButtonImport\""
   },
@@ -377,8 +377,7 @@
   "HiSwitch": {
     "prefix": "hswitch",
     "body": [
-      "<h1>${1:状态}</h1>"
-      "<div className=\"switch-basic__wrap\">"
+      "<div className=\"switch-basic__wrap\">",
       "\t<Switch defaultChecked />",
       "</div>"
     ],
@@ -488,7 +487,7 @@
   "HiList": {
     "prefix": "hlist",
     "body": [
-      "<List data={${1:[]}} render={(dataItem) => {"
+      "<List data={${1:[]}} render={(dataItem) => {",
       "\treturn <List.Item {...dataItem} />",
       "}}",
       "/>"
@@ -504,7 +503,7 @@
     "prefix": "hpopover",
     "body": [
       "<Popover title={${1:\"\"}} content={${2:\"\"}} trigger=\"${3|click,contextmenu,hover,focus|}\">",
-      "\t<div>input content </div>"
+      "\t<div>input content </div>",
       "</Popover>"
     ],
     "description": "Code snippet for \"HiPopover\""
@@ -568,7 +567,7 @@
     "prefix": "htooltip",
     "body": [
       "<Tooltip title=\"${1}\" trigger=\"${2|hover,click,focus,contextmenu|}\">",
-      "\t${3:<div>trigger</div>}"
+      "\t${3:<div>trigger</div>}",
       "</Tooltip>"
     ],
     "description": "Code snippet for \"HiTimeline\""
@@ -595,7 +594,7 @@
     "prefix": "hellipsis-tooltip",
     "body": [
       "<EllipsisTooltip>",
-      "\t${1}"
+      "\t${1}",
       "</EllipsisTooltip>"
     ],
     "description": "Code snippet for \"HiEllipsisTooltip\""
@@ -634,7 +633,7 @@
     "prefix": "hdraw",
     "body": [
       "<Draw title=\"${1:抽屉标题}\" visible={false}  onClose={() => console.log('onClose')} footer={<div>footer</div>}>",
-      "\t${2}<div>input content</div>"
+      "\t${2}<div>input content</div>",
       "</Draw>"
     ],
     "description": "Code snippet for \"HiDrawer\""
@@ -648,7 +647,7 @@
     "prefix": "hbadge",
     "body": [
       "<Badge type=\"${1|dot,bubble|}\">",
-      "\t${2}<div>input content</div>"
+      "\t${2}<div>input content</div>",
       "</Badge>"
     ],
     "description": "Code snippet for \"HiBadge\""
@@ -688,7 +687,7 @@
     "prefix": "hmodal",
     "body": [
       "<Modal title=\"${1:提示}\" visible={false} closeable={false} onCancel={() => console.log('setVisible(false)')}>",
-      "\t${2}<div>input content</div>"
+      "\t${2}<div>input content</div>",
       "</Modal>"
     ],
     "description": "Code snippet for \"HiModal\""
@@ -702,7 +701,7 @@
     "prefix": "hpop-confirm",
     "body": [
       "<PopConfirm title=\"${1:提示}\">",
-      "\t${2}<div>input content</div>"
+      "\t${2}<div>input content</div>",
       "</PopConfirm>"
     ],
     "description": "Code snippet for \"HiPopConfirm\""
@@ -809,7 +808,7 @@
     "\t <div>toolbar</div>",
     "]}",
     ">",
-    "\t${1}<div>input content</div>"
+    "\t${1}<div>input content</div>",
     "</ZenMode>"
   ],
     "description": "Code snippet for \"HiZenMode\""
@@ -823,7 +822,7 @@
     "prefix": "hscrollbar",
     "body": [
     "<Scrollbar>",
-    "\t${1}<div>input content</div>"
+    "\t${1}<div>input content</div>",
     "</Scrollbar>"
   ],
     "description": "Code snippet for \"HiScrollbar\""
@@ -837,7 +836,7 @@
     "prefix": "hanchor",
     "body": [
     "<Anchor style={{ width: 148 }} container={${1:<div>container</div>}} offset={-20}>",
-    "\t<AnchorItem href=\"#test-basic-h1-1\" title=\"${2:title}\"></AnchorItem>"
+    "\t<AnchorItem href=\"#test-basic-h1-1\" title=\"${2:title}\"></AnchorItem>",
     "</Anchor>"
   ],
     "description": "Code snippet for \"HiAnchor\""
