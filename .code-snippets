@@ -9,7 +9,7 @@
   },
   "HiButtonImport": {
     "prefix": "hcounter-import",
-    "body": ["import Button from \"@hi-ui/button\""],
+    "body": ["import Button from '@hi-ui/button'"],
     "description": "Code snippet for \"HiButtonImport\""
   },
   "HiButtonLink": {
@@ -17,7 +17,7 @@
     "body": [
       "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" appearance=\"link\" onClick={() => {\n\t// click Event}}>\n\t${2:按钮名称}\n</Button>"
     ],
-    "description": "Code snippet for \"HiButton link\""
+    "description": "Code snippet for \"HiButtonLink\""
   },
   "HiButtonLinkIcon": {
     "prefix": "hbtni",
@@ -35,7 +35,7 @@
   },
   "HiIconImport": {
     "prefix": "hicon-import",
-    "body": ["import * as Icons from \"@hi-ui/icons"],
+    "body": ["import * as Icons from '@hi-ui/icons'"],
     "description": "Code snippet for \"HiIconImport\""
   },
   "HiGrid": {
@@ -47,17 +47,17 @@
   },
   "HiGridImport": {
     "prefix": "hgrid-import",
-    "body": ["import Space from \"@hi-ui/space\"\nconst { Row, Col } = Grid\n"],
+    "body": ["import Space from '@hi-ui/space'\nconst { Row, Col } = Grid\n"],
     "description": "Code snippet for \"HiGridImport\""
   },
   "HiSpace": {
     "prefix": "hspace",
-    "body": ["<Space> \n\t${1} \n</Space>"],
+    "body": ["<Space> \n\t${1}\n</Space>"],
     "description": "Code snippet for \"HiSpace\""
   },
   "HiSpaceImport": {
     "prefix": "hspace-import",
-    "body": ["import Space from \"@hi-ui/space\"\n"],
+    "body": ["import Space from '@hi-ui/space'\n"],
     "description": "Code snippet for \"HiSpaceImport\""
   },
   //导航
@@ -70,7 +70,7 @@
   },
   "HiBreadImport": {
     "prefix": "hbread-import",
-    "body": ["import Breadcrumb from \"@hi-ui/breadcrumb\"\n"],
+    "body": ["import Breadcrumb from '@hi-ui/breadcrumb'\n"],
     "description": "Code snippet for \"HiBreadImport\""
   },
 
@@ -83,7 +83,7 @@
   },
   "HiDropDownImport": {
     "prefix": "hdrop-import",
-    "body": ["import Dropdown from \"@hi-ui/dropdown\"\n"],
+    "body": ["import Dropdown from '@hi-ui/dropdown'\n"],
     "description": "Code snippet for \"HiDropDownImport\""
   },
   "HiMenu": {
@@ -93,7 +93,7 @@
   },
   "HiMenuImport": {
     "prefix": "hmenu-import",
-    "body": ["import Menu from \"@hi-ui/menu\"\n"],
+    "body": ["import Menu from '@hi-ui/menu'\n"],
     "description": "Code snippet for \"HiMenuImport\""
   },
 
@@ -106,7 +106,7 @@
   },
   "HiPageImport": {
     "prefix": "hpage-import",
-    "body": ["import Pagination from \"@hi-ui/pagination\"\n"],
+    "body": ["import Pagination from '@hi-ui/pagination'\n"],
     "description": "Code snippet for \"HiPageImport\""
   },
 
@@ -117,7 +117,7 @@
   },
   "HiStepImport": {
     "prefix": "hstep-import",
-    "body": ["import Stepper from \"@hi-ui/stepper\"\n"],
+    "body": ["import Stepper from '@hi-ui/stepper'\n"],
     "description": "Code snippet for \"HiStepperImport\""
   },
   "HiTabs": {
@@ -129,7 +129,7 @@
   },
   "HiTabsImport": {
     "prefix": "htabs-import",
-    "body": ["import { Tabs, TabPane } from \"@hi-ui/tabs\"\n"],
+    "body": ["import { Tabs, TabPane } from '@hi-ui/tabs'\n"],
     "description": "Code snippet for \"HiTabsImport\""
   },
   //数据录入
@@ -142,7 +142,7 @@
   },
   "HiCheckSelectImport": {
     "prefix": "hcs-import",
-    "body": ["import CheckSelect from \"@hi-ui/check-select"],
+    "body": ["import CheckSelect from '@hi-ui/check-select'"],
     "description": "Code snippet for \"HiCheckSelectImport\""
   },
   "HiCheckCas": {
@@ -154,7 +154,7 @@
   },
   "HiCheckCasImport": {
     "prefix": "hccas-import",
-    "body": ["import CheckCascader from \"@hi-ui/check-cascader"],
+    "body": ["import CheckCascader from '@hi-ui/check-cascader'"],
     "description": "Code snippet for \"HiCheckCasImport\""
   },
   "HiCheck": {
@@ -164,7 +164,7 @@
   },
   "HiCheckImport": {
     "prefix": "hcb-import",
-    "body": ["import Checkbox from \"@hi-ui/checkbox"],
+    "body": ["import Checkbox from '@hi-ui/checkbox'"],
     "description": "Code snippet for \"HiCheckImport\""
   },
   "HiCheckTreeSelect": {
@@ -176,7 +176,7 @@
   },
   "HiCheckTreeSelectImport": {
     "prefix": "hctree-select-import",
-    "body": ["import CheckTreeSelect from \"@hi-ui/check-tree-select"],
+    "body": ["import CheckTreeSelect from '@hi-ui/check-tree-select'"],
     "description": "Code snippet for \"HiCheckTreeSelectImport\""
   },
   "HiCounter": {
@@ -188,7 +188,7 @@
   },
   "HiCounterImport": {
     "prefix": "hcounter-import",
-    "body": ["import Counter from \"@hi-ui/counter\""],
+    "body": ["import Counter from '@hi-ui/counter'"],
     "description": "Code snippet for \"HiCheckTreeSelectImport\""
   },
   "HiDatePicker": {
@@ -200,7 +200,7 @@
   },
   "HiDatePickerImport": {
     "prefix": "hdate-picker-import",
-    "body": ["import DatePicker from \"@hi-ui/date-picker\""],
+    "body": ["import DatePicker from '@hi-ui/date-picker'"],
     "description": "Code snippet for \"HiDatePickerImport\""
   },
   "HiForm": {
@@ -212,7 +212,7 @@
   },
   "HiFormImport": {
     "prefix": "hform-import",
-    "body": ["import Form from \"@hi-ui/form\""],
+    "body": ["import Form from '@hi-ui/form'"],
     "description": "Code snippet for \"HiFormImport\""
   },
   "HiCascader": {
@@ -224,7 +224,7 @@
   },
   "HiCascaderImport": {
     "prefix": "hform-import",
-    "body": ["import Cascader from \"@hi-ui/cascader\""],
+    "body": ["import Cascader from '@hi-ui/cascader'"],
     "description": "Code snippet for \"HiCascaderImport\""
   },
   "HiFilter": {
@@ -236,7 +236,7 @@
   },
   "HiFiltermport": {
     "prefix": "hfilter-import",
-    "body": ["import Filter from \"@hi-ui/filter\""],
+    "body": ["import Filter from '@hi-ui/filter'"],
     "description": "Code snippet for \"HiFiltermport\""
   },
   "HiInput": {
@@ -246,7 +246,7 @@
   },
   "HiInputImport": {
     "prefix": "hinput-import",
-    "body": ["import Input from \"@hi-ui/input\""],
+    "body": ["import Input from '@hi-ui/input'"],
     "description": "Code snippet for \"HiInputImport\""
   },
   "HiInputAutoFocus": {
@@ -263,7 +263,7 @@
   },
   "HiNumberInputImport": {
     "prefix": "hnum-input-import",
-    "body": ["import NumberInput from \"@hi-ui/number-input\""],
+    "body": ["import NumberInput from '@hi-ui/number-input'"],
     "description": "Code snippet for \"HiNumberInputImport\""
   },
   "HiRate": {
@@ -275,7 +275,7 @@
   },
   "HiRateImport": {
     "prefix": "hrate-import",
-    "body": ["import Rating from \"@hi-ui/rating\""],
+    "body": ["import Rating from '@hi-ui/rating'"],
     "description": "Code snippet for \"HiRateImport\""
   },
   "HiSearch": {
@@ -287,7 +287,7 @@
   },
   "HiSearchImport": {
     "prefix": "hsearch-import",
-    "body": ["import Search from \"@hi-ui/search\""],
+    "body": ["import Search from '@hi-ui/search'"],
     "description": "Code snippet for \"HiSearchImport\""
   },
   "HiSlider": {
@@ -299,7 +299,7 @@
   },
   "HiSliderImport": {
     "prefix": "hslider-import",
-    "body": ["import Slider from \"@hi-ui/slider\""],
+    "body": ["import Slider from '@hi-ui/slider'"],
     "description": "Code snippet for \"HiSliderImport\""
   },
   "HiRadio": {
@@ -311,7 +311,7 @@
   },
   "HiRadioImport": {
     "prefix": "hradio-import",
-    "body": ["import Radio from \"@hi-ui/radio\""],
+    "body": ["import Radio from '@hi-ui/radio'"],
     "description": "Code snippet for \"HiRadioImport\""
   },
   "HiSelect": {
@@ -323,7 +323,7 @@
   },
   "HiSelectImport": {
     "prefix": "hselect-import",
-    "body": ["import Select from \"@hi-ui/select\""],
+    "body": ["import Select from '@hi-ui/select'"],
     "description": "Code snippet for \"HiSelectImport\""
   },
   "HiTimePicker": {
@@ -335,7 +335,7 @@
   },
   "HiTimePickerImport": {
     "prefix": "hselect-import",
-    "body": ["import TimePicker from \"@hi-ui/time-picker\""],
+    "body": ["import TimePicker from '@hi-ui/time-picker'"],
     "description": "Code snippet for \"HiTimePickerImport\""
   },
   "HiTextArea": {
@@ -347,7 +347,7 @@
   },
   "HiTextAreaImport": {
     "prefix": "hselect-import",
-    "body": ["import TextArea from \"@hi-ui/textarea\""],
+    "body": ["import TextArea from '@hi-ui/textarea'"],
     "description": "Code snippet for \"HiTextAreaImport\""
   },
   "HiTransfer": {
@@ -359,7 +359,7 @@
   },
   "HiTransferImport": {
     "prefix": "htransfer-import",
-    "body": ["import Transfer from \"@hi-ui/transfer\""],
+    "body": ["import Transfer from '@hi-ui/transfer'"],
     "description": "Code snippet for \"HiTransferImport\""
   },
   "HiTreeSelect": {
@@ -371,7 +371,7 @@
   },
   "HiTreeSelectImport": {
     "prefix": "htree-select-import",
-    "body": ["import TreeSelect from \"@hi-ui/tree-select\""],
+    "body": ["import TreeSelect from '@hi-ui/tree-select'"],
     "description": "Code snippet for \"HiTreeSelectImport\""
   },
   "HiSwitch": {
@@ -386,7 +386,7 @@
   },
   "HiSwitchImport": {
     "prefix": "hswitch-import",
-    "body": ["import Switch from \"@hi-ui/switch\""],
+    "body": ["import Switch from '@hi-ui/switch'"],
     "description": "Code snippet for \"HiSwitchImport\""
   },
   "HiUpload": {
@@ -401,7 +401,7 @@
   },
   "HiUploadImport": {
     "prefix": "hupload-import",
-    "body": ["import Upload from \"@hi-ui/upload\""],
+    "body": ["import Upload from '@hi-ui/upload'"],
     "description": "Code snippet for \"HiUploadImport\""
   },
   "HiInputGroup": {
@@ -415,7 +415,7 @@
   },
   "HiInputGroupImport": {
     "prefix": "hinput-group-import",
-    "body": ["import InputGroup from \"@hi-ui/input-group\""],
+    "body": ["import InputGroup from '@hi-ui/input-group'"],
     "description": "Code snippet for \"HiInputGroupImport\""
   },
   //数据展示
@@ -430,7 +430,7 @@
   },
   "HiCarouselImport": {
     "prefix": "hinput-group-import",
-    "body": ["import Carousel from \"@hi-ui/carousel\""],
+    "body": ["import Carousel from '@hi-ui/carousel'"],
     "description": "Code snippet for \"HiCarouselImport\""
   },
   "HiAvater": {
@@ -440,7 +440,7 @@
   },
   "HiAvaterImport": {
     "prefix": "havater-import",
-    "body": ["import Card from \"@hi-ui/card\""],
+    "body": ["import Card from '@hi-ui/card'"],
     "description": "Code snippet for \"HiAvaterImport\""
   },
   "HiCard": {
@@ -450,7 +450,7 @@
   },
   "HiCardImport": {
     "prefix": "hcard-import",
-    "body": ["import Card from \"@hi-ui/card\""],
+    "body": ["import Card from '@hi-ui/card'"],
     "description": "Code snippet for \"HiCardImport\""
   },
   "HiCollapse": {
@@ -466,7 +466,7 @@
   },
   "HiCollapseImport": {
     "prefix": "hcollapse-import",
-    "body": ["import Collapse from \"@hi-ui/collapse\""],
+    "body": ["import Collapse from '@hi-ui/collapse'"],
     "description": "Code snippet for \"HiCollapseImport\""
   },
   "HiDescriptions": {
@@ -482,7 +482,7 @@
   },
   "HiDescriptionsImport": {
     "prefix": "hdesc-import",
-    "body": ["import Descriptions from \"@hi-ui/descriptions\""],
+    "body": ["import Descriptions from '@hi-ui/descriptions'"],
     "description": "Code snippet for \"HiDescriptionsImport\""
   },
   "HiList": {
@@ -497,7 +497,7 @@
   },
   "HiListImport": {
     "prefix": "hlist-import",
-    "body": ["import List from \"@hi-ui/list\""],
+    "body": ["import List from '@hi-ui/list'"],
     "description": "Code snippet for \"HiListImport\""
   },
   "HiPopover": {
@@ -511,7 +511,7 @@
   },
   "HiPopoverImport": {
     "prefix": "hpopover-import",
-    "body": ["import Popover from \"@hi-ui/popover\""],
+    "body": ["import Popover from '@hi-ui/popover'"],
     "description": "Code snippet for \"HiPopoverImport\""
   },
   "HiPreview": {
@@ -523,7 +523,7 @@
   },
   "HiPreviewImport": {
     "prefix": "hpreview-import",
-    "body": ["import Preview from \"@hi-ui/preview\""],
+    "body": ["import Preview from '@hi-ui/preview'"],
     "description": "Code snippet for \"HiPreviewImport\""
   },
   "HiTable": {
@@ -535,7 +535,7 @@
   },
   "HiTableImport": {
     "prefix": "htable-import",
-    "body": ["import Table from \"@hi-ui/table\""],
+    "body": ["import Table from '@hi-ui/table'"],
     "description": "Code snippet for \"HiTableImport\""
   },
   "HiTableColumns": {
@@ -561,7 +561,7 @@
   },
   "HiTimelineImport": {
     "prefix": "htimeline-import",
-    "body": ["import Timeline from \"@hi-ui/timeline\""],
+    "body": ["import Timeline from '@hi-ui/timeline'"],
     "description": "Code snippet for \"HiTimelineImport\""
   },
   "HiToolTip": {
@@ -575,7 +575,7 @@
   },
   "HiToolTipImport": {
     "prefix": "htooltip-import",
-    "body": ["import Tooltip from \"@hi-ui/tooltip\""],
+    "body": ["import Tooltip from '@hi-ui/tooltip'"],
     "description": "Code snippet for \"HiToolTipImport\""
   },
   "HiTree": {
@@ -588,7 +588,7 @@
   },
   "HiTreeImport": {
     "prefix": "htree-import",
-    "body": ["import Tree from \"@hi-ui/tree\""],
+    "body": ["import Tree from '@hi-ui/tree'"],
     "description": "Code snippet for \"HiTreeImport\""
   },
   "HiEllipsisTooltip": {
@@ -602,7 +602,7 @@
   },
   "HiEllipsisTooltipImport": {
     "prefix": "hellipsis-tooltip-import",
-    "body": ["import EllipsisTooltip from \"@hi-ui/ellipsis-tooltip\""],
+    "body": ["import EllipsisTooltip from '@hi-ui/ellipsis-tooltip'"],
     "description": "Code snippet for \"HiEllipsisTooltipImport\""
   },
   //状态/反馈
@@ -615,7 +615,7 @@
   },
   "HiAlertImport": {
     "prefix": "halert-import",
-    "body": ["import Alert from \"@hi-ui/alert\""],
+    "body": ["import Alert from '@hi-ui/alert'"],
     "description": "Code snippet for \"HiAlertImport\""
   },
   "HiEmptyState": {
@@ -627,7 +627,7 @@
   },
   "HiEmptyStateImport": {
     "prefix": "hempty-state-import",
-    "body": ["import EmptyState from \"@hi-ui/empty-state\""],
+    "body": ["import EmptyState from '@hi-ui/empty-state'"],
     "description": "Code snippet for \"HiEmptyStateImport\""
   },
   "HiDrawer": {
@@ -641,7 +641,7 @@
   },
   "HiDrawerImport": {
     "prefix": "hdraw-import",
-    "body": ["import Drawer from \"@hi-ui/drawer\""],
+    "body": ["import Drawer from '@hi-ui/drawer'"],
     "description": "Code snippet for \"HiDrawerImport\""
   },
   "HiBadge": {
@@ -655,7 +655,7 @@
   },
   "HiBadgeImport": {
     "prefix": "hbadge-import",
-    "body": ["import Badge from \"@hi-ui/badge\""],
+    "body": ["import Badge from '@hi-ui/badge'"],
     "description": "Code snippet for \"HiBadgeImport\""
   },
   "HiLoading": {
@@ -721,7 +721,7 @@
   },
   "HiNotificationImport": {
     "prefix": "hnotify-import",
-    "body": ["import Notification from \"@hi-ui/notification\"\n"],
+    "body": ["import Notification from '@hi-ui/notification'\n"],
     "description": "Code snippet for \"HiNotificationImport\""
   },
   "HiProgress": {
@@ -733,7 +733,7 @@
   },
   "HiProgressImport": {
     "prefix": "hprogress-import",
-    "body": ["import Progress from \"@hi-ui/progress\""],
+    "body": ["import Progress from '@hi-ui/progress'"],
     "description": "Code snippet for \"HiProgressImport\""
   },
   "HiProgressWithType": {
@@ -752,7 +752,7 @@
   },
   "HiResultImport": {
     "prefix": "hres-import",
-    "body": ["import Result from \"@hi-ui/result\"\n"],
+    "body": ["import Result from '@hi-ui/result'\n"],
     "description": "Code snippet for \"HiHightLightImport\""
   },
   "HiTag": {
@@ -764,7 +764,7 @@
   },
   "HiTagImport": {
     "prefix": "htag-import",
-    "body": ["import Tag from \"@hi-ui/tag\"\n"],
+    "body": ["import Tag from '@hi-ui/tag'\n"],
     "description": "Code snippet for \"HiTagImport\""
   },
   "HiHightLight": {
@@ -774,7 +774,98 @@
   },
   "HiHightLightImport": {
     "prefix": "hlight-import",
-    "body": ["import Highlighter from \"@hi-ui/highlighter\"\n"],
+    "body": ["import Highlighter from '@hi-ui/highlighter'\n"],
     "description": "Code snippet for \"HiHightLightImport\""
-  }
+  },
+  //其他
+  "HiSvgIcon": {
+    "prefix": "hsvg-icon",
+    "body": ["<SvgIcon aria-label=\"${1}\">",
+    "\t${2}",
+    "</SvgIcon>"
+  ],
+    "description": "Code snippet for \"HiSvgIcon\""
+  },
+  "HiSvgIconImport": {
+    "prefix": "hsvg-icon-import",
+    "body": ["import SvgIcon from '@hi-ui/svg-icon'\n"],
+    "description": "Code snippet for \"HiSvgIconImport\""
+  },
+  "HiWatermark": {
+    "prefix": "hwater-mark",
+    "body": ["<Watermark content={[\"HiUI\", \"做中台，就用 HiUI\"]}></Watermark>"
+  ],
+    "description": "Code snippet for \"HiWatermark\""
+  },
+  "HiWatermarkImport": {
+    "prefix": "hwater-mark-import",
+    "body": ["import Watermark from '@hi-ui/watermark'\n"],
+    "description": "Code snippet for \"HiWatermarkImport\""
+  },
+  "HiZenMode": {
+    "prefix": "hzen-mode",
+    "body": ["<ZenMode visible={false} onBack={() => {\n\t console.log('setVisible(false)')",
+    "}} toolbar={[",
+    "\t <div>toolbar</div>",
+    "]}",
+    ">",
+    "\t${1}<div>input content</div>"
+    "</ZenMode>"
+  ],
+    "description": "Code snippet for \"HiZenMode\""
+  },
+  "HiZenModeImport": {
+    "prefix": "hzen-mode-import",
+    "body": ["import ZenMode from '@hi-ui/zen-mode'\n"],
+    "description": "Code snippet for \"HiZenModeImport\""
+  },
+  "HiScrollbar": {
+    "prefix": "hscrollbar",
+    "body": [
+    "<Scrollbar>",
+    "\t${1}<div>input content</div>"
+    "</Scrollbar>"
+  ],
+    "description": "Code snippet for \"HiScrollbar\""
+  },
+  "HiScrollbarImport": {
+    "prefix": "hscrollbar-import",
+    "body": ["import Scrollbar from '@hi-ui/scrollbar'\n"],
+    "description": "Code snippet for \"HiScrollbarImport\""
+  },
+  "HiAnchor": {
+    "prefix": "hanchor",
+    "body": [
+    "<Anchor style={{ width: 148 }} container={${1:<div>container</div>}} offset={-20}>",
+    "\t<AnchorItem href=\"#test-basic-h1-1\" title=\"${2:title}\"></AnchorItem>"
+    "</Anchor>"
+  ],
+    "description": "Code snippet for \"HiAnchor\""
+  },
+  "HiAnchorImport": {
+    "prefix": "hanchor-import",
+    "body": ["import Anchor, { AnchorItem } from '@hi-ui/anchor'\n"],
+    "description": "Code snippet for 'HiAnchorImport'"
+  },
+  "HiBackTopById": {
+    "prefix": "hback-top-by-id",
+    "body": [
+    "<BackTop style={{ position: \"absolute\" }} container={() => document.getElementById(\"back-top_target\")} />"
+  ],
+    "description": "Code snippet for \"HiBackTop\""
+  },
+  "HiBackTop": {
+    "prefix": "hback-top",
+    "body": [
+    "<BackTop>",
+    "\t${1:<div>input Content</div>}",
+    "</BackTop>"
+  ],
+    "description": "Code snippet for \"HiBackTop\""
+  },
+  "HiBackTopImport": {
+    "prefix": "hback-top-import",
+    "body": ["import BackTop from '@hi-ui/back-top'\n"],
+    "description": "Code snippet for \"HiBackTopImport\""
+  },
 }
