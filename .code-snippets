@@ -1,157 +1,392 @@
 {
+  //通用
   "HiButton": {
-    "prefix": "hb",
+    "prefix": "hbtn",
     "body": [
       "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" onClick={() => {\n\t// click Event\n}}>\n\t${2:按钮名称}\n</Button>"
     ],
     "description": "Code snippet for \"HiButton\""
   },
+  "HiButtonImport":{
+    "prefix": "hcounter-import",
+    "body": [
+      "import Button from \"@hi-ui/button\""   
+    ],
+    "description": "Code snippet for \"HiButtonImport\""
+  },
   "HiButtonLink": {
-    "prefix": "hba",
+    "prefix": "hbtna",
     "body": [
       "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" appearance=\"link\" onClick={() => {\n\t// click Event}}>\n\t${2:按钮名称}\n</Button>"
     ],
     "description": "Code snippet for \"HiButton link\""
   },
   "HiButtonLinkIcon": {
-    "prefix": "hbi",
+    "prefix": "hbtni",
     "body": [
       "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\" appearance=\"link\" icon={<PlusOutlined />} onClick={() => {\n\t// click Event}}>\n\t${2:按钮名称}\n</Button>"
     ],
     "description": "Code snippet for \"HiButton icon\""
   },
   "HiButtonLinkLoading": {
-    "prefix": "hbl",
+    "prefix": "hbtnl",
     "body": [
       "<Button type=\"${1|primary,success ,danger ,default ,secondary|}\"  icon={<PlusOutlined />}  loading onClick={() => {\n\t// click Event}}>\n\t${2:按钮名称}\n</Button>"
     ],
     "description": "Code snippet for \"HiButton Loading\""
   },
+  "HiIconImport":{
+    "prefix": "hicon-import",
+    "body": [
+      "import * as Icons from \"@hi-ui/icons"   
+    ],
+    "description": "Code snippet for \"HiIconImport\""
+  },
+  "HiGrid":{
+    "prefix": "hgrid",
+    "body": [
+      "<Row> \n\t<Col span={24}>\n\t\t${1:<div>hgrid test</div>} \n\t</Col> \n</Row>"   
+    ],
+    "description": "Code snippet for \"HiGrid\""
+  },
+  "HiGridImport":{
+    "prefix": "hgrid-import",
+    "body": [
+      "import Space from \"@hi-ui/space\"\nconst { Row, Col } = Grid\n"   
+    ],
+    "description": "Code snippet for \"HiGridImport\""
+  },
+  "HiSpace":{
+    "prefix": "hspace",
+    "body": [
+      "<Space> \n\t${1} \n</Space>"   
+    ],
+    "description": "Code snippet for \"HiSpace\""
+  },
+  "HiSpaceImport":{
+    "prefix": "hspace-import",
+    "body": [
+      "import Space from \"@hi-ui/space\"\n"   
+    ],
+    "description": "Code snippet for \"HiSpaceImport\""
+  },
+  //导航
+  "HiBread":{
+    "prefix": "hbread",
+    "body": [
+      "<Breadcrumb data={${1:[]}}  onClick={(evt, item) => {\n\tconsole.log(\"get Item\", item)\n}}/>"   
+    ],
+    "description": "Code snippet for \"HiBread\""
+  },
+  "HiBreadImport":{
+    "prefix": "hbread-import",
+    "body": [
+      "import Breadcrumb from \"@hi-ui/breadcrumb\"\n"   
+    ],
+    "description": "Code snippet for \"HiBreadImport\""
+  },
+
+  "HiDropDown":{
+    "prefix": "hdrop",
+    "body": [
+      "<Dropdown data={${1:[]}} title=\"${2:title}\" onClick={console.log}/>"   
+    ],
+    "description": "Code snippet for \"HiDropDown\""
+  },
+  "HiDropDownImport":{
+    "prefix": "hdrop-import",
+    "body": [
+      "import Dropdown from \"@hi-ui/dropdown\"\n"   
+    ],
+    "description": "Code snippet for \"HiDropDownImport\""
+  },
+  "HiMenu":{
+    "prefix": "hmenu",
+    "body": [
+      "<Menu showCollapse   defaultExpandedIds={[1]} data={${1:[]}}/>"   
+    ],
+    "description": "Code snippet for \"HiMenu\""
+  },
+  "HiMenuImport":{
+    "prefix": "hmenu-import",
+    "body": [
+      "import Menu from \"@hi-ui/menu\"\n"   
+    ],
+    "description": "Code snippet for \"HiMenuImport\""
+  },
+
+  "HiPage":{
+    "prefix": "hpage",
+    "body": [
+      "<Pagination total={${1:100}} pageSize={${2:10}}  current={${3|{}|}} onChange={(cur, prev, pageSize) => {\n\tconsole.log(\"onChange\", cur, prev, pageSize)\n}}/>"   
+    ],
+    "description": "Code snippet for \"HiPage\""
+  },
+  "HiPageImport":{
+    "prefix": "hpage-import",
+    "body": [
+      "import Pagination from \"@hi-ui/pagination\"\n"   
+    ],
+    "description": "Code snippet for \"HiPageImport\""
+  },
+
+  "HiStep":{
+    "prefix": "hstep",
+    "body": [
+      "<Stepper data={${1|{}|}} current={${2:2}} />"   
+    ],
+    "description": "Code snippet for \"HiStepper\""
+  },
+  "HiStepImport":{
+    "prefix": "hstep-import",
+    "body": [
+      "import Stepper from \"@hi-ui/stepper\"\n"   
+    ],
+    "description": "Code snippet for \"HiStepperImport\""
+  },
+  "HiTabs":{
+    "prefix": "htabs",
+    "body": [
+      "<Tabs style={{ marginTop: 16 }} activeId=\"${1:1}\" onChange={(index)=>{console.log(index)}} >\n\t<TabPane tabId=\"1\" tabTitle=\"Tab 1\">\n\t</TabPane>\n\n\t<TabPane tabId=\"2\" tabTitle=\"Tab 2\">\n\t</TabPane>\n</Tabs>"   
+    ],
+    "description": "Code snippet for \"HiStepper\""
+  },
+  "HiTabsImport":{
+    "prefix": "htabs-import",
+    "body": [
+      "import { Tabs, TabPane } from \"@hi-ui/tabs\"\n"   
+    ],
+    "description": "Code snippet for \"HiTabsImport\""
+  },
+  //数据录入
+  "HiCheckSelect":{
+    "prefix": "hcs",
+    "body": [
+      "<CheckSelect style={{ width: 240 }} placeholder=\"${1:请选择}\" searchable clearable data={${2:[]}} />"
+    ],
+    "description": "Code snippet for \"HiCheckSelect\""
+  },
+  "HiCheckSelectImport":{
+    "prefix": "hcs-import",
+    "body": [
+      "import CheckSelect from \"@hi-ui/check-select"   
+    ],
+    "description": "Code snippet for \"HiCheckSelectImport\""
+  },
+  "HiCheckCas":{
+    "prefix": "hccas",
+    "body": [
+      "<CheckCascader style={{ width: 240 }} defaultValue={[[\"xx\", \"xx\", \"xx\"]]} placeholder=\"${1:请选择}\" searchable={false} changeOnSelect data={${2:[]}} onChange={console.log} />"
+    ],
+    "description": "Code snippet for \"HiCheckCas\""
+  },
+  "HiCheckCasImport":{
+    "prefix": "hccas-import",
+    "body": [
+      "import CheckCascader from \"@hi-ui/check-cascader"   
+    ],
+    "description": "Code snippet for \"HiCheckCasImport\""
+  },
+  "HiCheck":{
+    "prefix": "hcb",
+    "body": [
+      "<Checkbox>\n\t${1}\n</Checkbox>"
+    ],
+    "description": "Code snippet for \"HiCheck\""
+  },
+  "HiCheckImport":{
+    "prefix": "hcb-import",
+    "body": [
+      "import Checkbox from \"@hi-ui/checkbox"   
+    ],
+    "description": "Code snippet for \"HiCheckImport\""
+  },
+  "HiCheckTreeSelect":{
+    "prefix": "hctree-select",
+    "body": [
+      "<CheckTreeSelect style={{ width: 240 }} checkedMode=\"${1|PARENT,ALL,CHILD,SEPARATE|}\" data={${2:[]}} onChange={console.log}/>"
+    ],
+    "description": "Code snippet for \"HiCheckTreeSelect\""
+  },
+  "HiCheckTreeSelectImport":{
+    "prefix": "hctree-select-import",
+    "body": [
+      "import CheckTreeSelect from \"@hi-ui/check-tree-select"   
+    ],
+    "description": "Code snippet for \"HiCheckTreeSelectImport\""
+  },
+  "HiCounter":{
+    "prefix": "hcounter",
+    "body": [
+      "<Counter defaultValue={${1:0}} onChange={(v) => \n\tconsole.log(\"onChange\", v)}\n/>"
+    ],
+    "description": "Code snippet for \"HiCounter\""
+  },
+  "HiCounterImport":{
+    "prefix": "hcounter-import",
+    "body": [
+      "import Counter from \"@hi-ui/counter\""   
+    ],
+    "description": "Code snippet for \"HiCheckTreeSelectImport\""
+  },
+  "HiDatePicker":{
+    "prefix": "hdate-picker",
+    "body": [
+      "<DatePicker  style={{ width: 240 }} onSelect={console.log} onChange={(date, dateStr) => \n\tconsole.log(\"onChange\", date, dateStr)}\n/>"
+    ],
+    "description": "Code snippet for \"HiDatePicker\""
+  },
+  "HiDatePickerImport":{
+    "prefix": "hdate-picker-import",
+    "body": [
+      "import DatePicker from \"@hi-ui/date-picker\""   
+    ],
+    "description": "Code snippet for \"HiDatePickerImport\""
+  },
+  "HiForm":{
+    "prefix": "hform",
+    "body": [
+      "<Form initialValues={{ testInput: 1, testInput2: \"testInput2\" }} labelWidth={80} rules={{}}>\n\t<FormItem field=\"testInput\" valueType=\"number\" label=\"用户名\">\n\t\t<Input onChange={console.log} />\n\t</FormItem>\n</Form>"
+    ],
+    "description": "Code snippet for \"HiDatePicker\""
+  },
+  "HiFormImport":{
+    "prefix": "hform-import",
+    "body": [
+      "import Form from \"@hi-ui/form\""   
+    ],
+    "description": "Code snippet for \"HiFormImport\""
+  },
+  "HiInput": {
+    "prefix": "hinput",
+    "body": [
+      "<Input placeholder=\"${1:请输入}\"></Input>"
+    ],
+    "description": "Code snippet for \"HiInput\""
+  },
+  "HiInputImport":{
+    "prefix": "hinput-import",
+    "body": [
+      "import Input from \"@hi-ui/input\""   
+    ],
+    "description": "Code snippet for \"HiInputImport\""
+  },
+  "HiInputAutoFocus": {
+    "prefix": "hinput-auto-focus",
+    "body": [
+      "<Input autoFocus placeholder=\"${1:请输入}\"></Input>"
+    ],
+    "description": "Code snippet for \"HiInputAutoFocus\""
+  },
+  "HiSelect": {
+    "prefix": "hselect",
+    "body": [
+      "<Select style={{ width: 240 }} clearable={false} data={${1:data}} value={${2:value}} onChange={(selectedId) => {\n\tconsole.log(selectedId)\n}}/>"
+    ],
+    "description": "Code snippet for \"Hi Select\""
+  },
+  "HiSelectImport":{
+    "prefix": "hselect-import",
+    "body": [
+      "import Select from \"@hi-ui/select\""   
+    ],
+    "description": "Code snippet for \"HiSelectImport\""
+  },
+  //数据展示
+  "HiCard": {
+    "prefix": "hcard",
+    "body": [
+      "<Card bordered={false}></Card>"
+    ],
+    "description": "Code snippet for \"HiCard\""
+  },
+  "HiCardImport":{
+    "prefix": "hcard-import",
+    "body": [
+      "import Card from \"@hi-ui/card\""   
+    ],
+    "description": "Code snippet for \"HiCardImport\""
+  },
   "HiTable": {
-    "prefix": "ht",
+    "prefix": "htable",
     "body": [
       "<Table columns={${1|[],columns|}} data={[]} bordered={true} fieldKey=\"$TM_FILENAME_BASE\" />"
     ],
     "description": "Code snippet for \"Hi Table\""
   },
+  "HiTableImport":{
+    "prefix": "htable-import",
+    "body": [
+      "import Table from \"@hi-ui/table\""   
+    ],
+    "description": "Code snippet for \"HiTableImport\""
+  },
   "HiTableColumns": {
-    "prefix": "htd",
+    "prefix": "htable-data",
     "body": [
       "const ${1:columns}: TableColumnItem[] = [{title: '${2:序号}',dataKey: '${3:index}',width: ${4:60}}]"
     ],
     "description": "Code snippet for \"HiTableColumns\""
   },
   "HiTableColumnsRender": {
-    "prefix": "htdr",
+    "prefix": "htable-data-render",
     "body": [
         "const ${1:columns}: TableColumnItem[] = [{title: '${2:序号}',dataKey: '${3:index}',width: ${4:60},render: (_text, _rec, index) => index + 1}]"
     ],
     "description": "Code snippet for \"HiTableColumns\""
   },
-  "HiSelect": {
-    "prefix": "hsel",
-    "body": [
-      "<Select style={{ width: 240 }} clearable={false} data={${1:data}} value={${2:value}} onChange={(selectedId) => {\n\tconsole.log(selectedId)\n}}/>"
-    ],
-    "description": "Code snippet for \"Hi Select\""
-  },
-  "HiInput": {
-    "prefix": "hi",
-    "body": [
-      "<Input placeholder=\"${1:请输入}\"></Input>"
-    ],
-    "description": "Code snippet for \"HiInput\""
-  },
-  "HiInputAutoFocus": {
-    "prefix": "hia",
-    "body": [
-      "<Input autoFocus placeholder=\"${1:请输入}\"></Input>"
-    ],
-    "description": "Code snippet for \"HiInputAutoFocus\""
-  },
-  "HiCard": {
-    "prefix": "hc",
-    "body": [
-      "<Card bordered={false}></Card>"
-    ],
-    "description": "Code snippet for \"HiCard\""
-  },
+
+ 
+
   "HiProgress": {
-    "prefix": "hp",
+    "prefix": "hprogress",
     "body": [
       "<Progress strokeWidth={20} percent={0}  placement=\"${1|inside,outside|}\"></Progress>"
     ],
     "description": "Code snippet for \"HiCard\""
   },
+  "HiProgressImport":{
+    "prefix": "hprogress-import",
+    "body": [
+      "import Progress from \"@hi-ui/progress\""   
+    ],
+    "description": "Code snippet for \"HiProgressImport\""
+  },
   "HiProgressWithType": {
-    "prefix": "hpt",
+    "prefix": "hprogress-type",
     "body": [
       "<Progress strokeWidth={20} percent={0}  type=\"${1|primary,warning,error,success|}\" placement=\"${2|inside,outside|}\"></Progress>"
     ],
     "description": "Code snippet for \"HiProgressWithType\""
   },
+  //状态/反馈
+  "HiLoading":{
+    "prefix": "hloading",
+    "body": [
+      " <Loading content=\"${1:Loading...}\" delay={${2:500}}></Loading>"   
+    ],
+    "description": "Code snippet for \"HiLoadingComp\""
+  },
+  "HiLoadingImport":{
+    "prefix": "hloading-import",
+    "body": [
+      "import Loading from '@hi-ui/loading'\nconst loadingIdRef = React.useRef<any>(null)\nReact.useEffect(() => {\n\treturn () => {\n\tLoading.close(loadingIdRef.current)\n\t}\n}, [])"   
+    ],
+    "description": "Code snippet for \"HiLoadingImport\""
+  },
   "HiMessage":{
-    "prefix": "hm",
+    "prefix": "hmessage",
     "body": [
       "message.open({ title: \"${2}\", type: \"${1|success,info,error,warning|}\"})"   
     ],
     "description": "Code snippet for \"HiMessage\""
   },
   "HiMessageImport":{
-    "prefix": "hmimport",
+    "prefix": "hmessage-import",
     "body": [
       "import message from '@hi-ui/message'\n"   
     ],
     "description": "Code snippet for \"HiMessageImport\""
-  },
-  "HiLoadingCode":{
-    "prefix": "hloadingcode",
-    "body": [
-      "import Loading from '@hi-ui/loading'\nconst loadingIdRef = React.useRef<any>(null)\nReact.useEffect(() => {\n\treturn () => {\n\tLoading.close(loadingIdRef.current)\n\t}\n}, [])"   
-    ],
-    "description": "Code snippet for \"HiLoading\""
-  },
-  "HiLoadingComp":{
-    "prefix": "hloadingcomp",
-    "body": [
-      " <Loading content=\"${1:Loading...}\" delay={${2:500}}></Loading>"   
-    ],
-    "description": "Code snippet for \"HiLoadingComp\""
-  },
-  "HiTag": {
-    "prefix": "htag",
-    "body": [
-      "<Tag strokeWidth={20} percent={0}  type=\"${1|primary,success,danger,warning,default|}\"></Tag>"
-    ],
-    "description": "Code snippet for \"HiTag\""
-  },
-  "HiHightLight": {
-    "prefix": "hlight",
-    "body": [
-      "<Highlighter keyword=\"${1:高亮关键字}\">${2}</Highlighter>"
-    ],
-    "description": "Code snippet for \"HiHightLight\""
-  },
-  "HiHightLightImport": {
-    "prefix": "hlightImport",
-    "body": [
-      "import Highlighter from \"@hi-ui/highlighter\"\n"
-    ],
-    "description": "Code snippet for \"HiHightLightImport\""
-  },
-  "HiResult": {
-    "prefix": "hres",
-    "body": [
-      "<Result title=\"${1:我是标题}\" content=\"${2:我是结果信息的说明文案}\"></Result>"
-    ],
-    "description": "Code snippet for \"HiResult\""
-  },
-  "HiResultImport": {
-    "prefix": "hresimport",
-    "body": [
-      "import Result from \"@hi-ui/result\"\n"
-    ],
-    "description": "Code snippet for \"HiHightLightImport\""
   },
   "HiNotification":{
     "prefix": "hnotification",
@@ -161,10 +396,52 @@
     "description": "Code snippet for \"HiNotification\""
   },
   "HiNotificationImport":{
-    "prefix": "hnotifyimport",
+    "prefix": "hnotify-import",
     "body": [
-      "import Button from \"@hi-ui/button\"\n"   
+      "import Notification from \"@hi-ui/notification\"\n"   
     ],
     "description": "Code snippet for \"HiNotificationImport\""
+  },
+  "HiResult": {
+    "prefix": "hres",
+    "body": [
+      "<Result title=\"${1:我是标题}\" content=\"${2:我是结果信息的说明文案}\"></Result>"
+    ],
+    "description": "Code snippet for \"HiResult\""
+  },
+  "HiResultImport": {
+    "prefix": "hres-import",
+    "body": [
+      "import Result from \"@hi-ui/result\"\n"
+    ],
+    "description": "Code snippet for \"HiHightLightImport\""
+  },
+  "HiTag": {
+    "prefix": "htag",
+    "body": [
+      "<Tag strokeWidth={20} percent={0}  type=\"${1|primary,success,danger,warning,default|}\"></Tag>"
+    ],
+    "description": "Code snippet for \"HiTag\""
+  },
+  "HiTagImport": {
+    "prefix": "htag-import",
+    "body": [
+      "import Tag from \"@hi-ui/tag\"\n"
+    ],
+    "description": "Code snippet for \"HiTagImport\""
+  },
+  "HiHightLight": {
+    "prefix": "hlight",
+    "body": [
+      "<Highlighter keyword=\"${1:高亮关键字}\">${2}</Highlighter>"
+    ],
+    "description": "Code snippet for \"HiHightLight\""
+  },
+  "HiHightLightImport": {
+    "prefix": "hlight-import",
+    "body": [
+      "import Highlighter from \"@hi-ui/highlighter\"\n"
+    ],
+    "description": "Code snippet for \"HiHightLightImport\""
   },
 }
