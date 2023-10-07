@@ -11,7 +11,7 @@
   "icon": "logo.png",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.82.0"
+    "vscode": "^1.62.0"
   },
   "categories": [
     "Snippets"
