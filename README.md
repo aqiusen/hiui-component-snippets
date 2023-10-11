@@ -114,3 +114,11 @@
 # 导入包提示：
 
 ![header-tip-gif图](/images/header-tip.gif)
+
+# 跳转到对应官网组件方式：
+
+![header-tip-gif图](/images/jump.png)
+
+# 如何消除每次跳转的弹窗：
+点击配置受信任的域即可
+![header-tip-gif图](/images/config.png)

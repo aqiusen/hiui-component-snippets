@@ -16,13 +16,17 @@
   "categories": [
     "Snippets"
   ],
-  "activationEvents": [],
+	"activationEvents": [],
   "main": "./extension.js",
   "contributes": {
     "commands": [
       {
         "command": "hiui-component-snippets.helloWorld",
         "title": "hiui-component-snippets.helloWorld"
+      },
+      {
+        "command": "hiui-component-snippets.jumpToHtml",
+        "title": "跳转到HiUi组件官网"
       }
     ],
     "snippets": [
@@ -34,7 +38,16 @@
         "when": "editorFocus && (resourceExtname == .js || resourceExtname == .ts || resourceExtname == .tsx || resourceExtname == .jsx)",
         "path": ".code-snippets"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorFocus && (resourceExtname == .js || resourceExtname == .ts || resourceExtname == .tsx || resourceExtname == .jsx)",
+          "command": "hiui-component-snippets.jumpToHtml",
+          "group": "navigation"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint .",

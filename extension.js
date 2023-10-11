@@ -1,7 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
-
+const { jumpToHtml } = require('./utils/index')
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 
@@ -23,21 +23,12 @@ function activate(context) {
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from hiui-component-snippets!');
 	});
-	//监听用户是否执行了这个命令：
-	const tableSnip = vscode.workspace.onDidExecuteTextEditorCommand((e) => {
-		debugger
-		if (e.command === 'editor.action.insertSnippet' && e.text.includes("Table")) {
-		  // 用户执行了 mySnippet 代码片段
-		  console.log('User executed my snippet!');
-		}
-	  });
-
+	let jumpToHtmlSub = vscode.commands.registerCommand("hiui-component-snippets.jumpToHtml", jumpToHtml);
 	context.subscriptions.push(disposable);
-	context.subscriptions.push(tableSnip);
+	context.subscriptions.push(jumpToHtmlSub);
 }
 
-// This method is called when your extension is deactivated
-function deactivate() {}
+function deactivate() { }
 
 module.exports = {
 	activate,
