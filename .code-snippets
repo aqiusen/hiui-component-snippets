@@ -334,7 +334,7 @@
     "description": "Code snippet for \"HiTimePicker\""
   },
   "HiTimePickerImport": {
-    "prefix": "hselect-import",
+    "prefix": "htime-import",
     "body": ["import TimePicker from '@hi-ui/time-picker'"],
     "description": "Code snippet for \"HiTimePickerImport\""
   },
@@ -428,7 +428,7 @@
     "description": "Code snippet for \"HiCarousel\""
   },
   "HiCarouselImport": {
-    "prefix": "hinput-group-import",
+    "prefix": "hcarousel-group-import",
     "body": ["import Carousel from '@hi-ui/carousel'"],
     "description": "Code snippet for \"HiCarouselImport\""
   },
@@ -439,7 +439,7 @@
   },
   "HiAvaterImport": {
     "prefix": "havater-import",
-    "body": ["import Card from '@hi-ui/card'"],
+    "body": ["import Avatar from '@hi-ui/avatar'"],
     "description": "Code snippet for \"HiAvaterImport\""
   },
   "HiCard": {
